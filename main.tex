@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%
+% CV Matys LAGUERRE - AI & Data Science
+%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+% --- Page Layout ---
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+\usepackage{fontawesome5}
+
+% --- Fonts ---
+\iftutex
+  \setmainfont{Roboto}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[default]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% --- COLORS (TECH THEME: BLUE/GREY) ---
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{TechBlue}{HTML}{0E5484}
+\definecolor{DeepBlue}{HTML}{002642}
+\definecolor{AccentBlue}{HTML}{3d85c6}
+
+\colorlet{name}{DeepBlue}
+\colorlet{tagline}{TechBlue}
+\colorlet{heading}{DeepBlue}
+\colorlet{headingrule}{TechBlue}
+\colorlet{subheading}{TechBlue}
+\colorlet{accent}{TechBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% --- Font Styles ---
+\renewcommand{\namefont}{\Huge\sffamily\bfseries}
+\renewcommand{\cvsectionfont}{\LARGE\sffamily\bfseries\scshape} % \scshape adds Small Caps
+\renewcommand{\cvsubsectionfont}{\large\sffamily\bfseries}
+\renewcommand{\cvItemMarker}{{\small\faAngleRight}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+
+\name{Matys LAGUERRE}
+\tagline{AI \& Data Science Student @ Epitech}
+\photoR{4.5cm}{myphoto}
+
+\personalinfo{%
+  \email{matys.laguerre@epitech.eu}
+  \location{Montpellier, France}
+  \printinfo{\faLinkedin}{Matys Laguerre}
+  [https://www.linkedin.com/in/matys-laguerre-39560a2b1/]
+  \printinfo{\faGithub}{Matyslgr}[https://github.com/Matyslgr]
+}
+
+\makecvheader
+
+% --- COLUMN SETUP ---
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+%======================================================================
+% LEFT COLUMN
+%======================================================================
+
+\cvsection{Experience}
+
+\cvevent{R\&D AI Engineer Intern}{AI-Stroke}{Aug 2024 -- Dec 2024}{Montpellier, France}
+\begin{itemize}
+    \item Spearheaded the development of a \textbf{Deep Learning} pipeline to detect strokes from patient voice recordings (Medical R\&D).
+    \item Implemented complex audio signal processing: transformed raw audio into \textbf{Spectrograms} with noise reduction, normalization, and segmentation.
+    \item Fine-tuned a pre-trained classification model using \textbf{PyTorch}, achieving a \textbf{10\% increase in F1-Score} on critical labels compared to the baseline.
+    \item Managed the full implementation lifecycle autonomously while collaborating with senior engineers for technical validation.
+\end{itemize}
+
+\bigskip
+
+\cvsection{Projects}
+
+% --- Project 1: Robocar ---
+\cvevent{Autonomous Vehicle (1/10 Scale)}{Academic Project (Epitech)}{March 2025 -- May 2026}{}
+\begin{itemize}
+    \item Designed a modular \textbf{ROS2} architecture on \textbf{NVIDIA Jetson Nano}, optimizing algorithms for strict Edge Computing constraints (CPU/RAM).
+    \item Implemented \textbf{Multi-Sensor Fusion} (Lidar, 3D Camera, GPS/RTK, IMU, Odometry) to achieve robust \textbf{SLAM} and precise localization.
+    \item Developed a \textbf{Reinforcement Learning} agent for autonomous navigation in varied environments, utilizing fused sensor data as input.
+
+\end{itemize}
+
+\divider
+\addvspace{1em}
+
+% --- Project 2: PinkCC ---
+\cvevent{PinkCC Challenge 2025 (Finalist)}{Medical AI Competition}{Jan 2025}{Montpellier, France}
+\begin{itemize}
+    \item Selected as a \textbf{Finalist} in a high-level challenge organized by SIRIC Montpellier Cancer to innovate in breast cancer research.
+    \item Developed and trained Deep Learning models to analyze complex histological data for cancer detection.
+    \item Collaborated in an intensive, time-constrained environment to deliver a viable solution presented to medical experts.
+\end{itemize}
+
+%======================================================================
+% RIGHT COLUMN
+%======================================================================
+\switchcolumn
+
+\cvsection{Skills}
+
+\cvtag{Python}
+\cvtag{C++}
+\cvtag{C}
+
+\divider\smallskip
+
+\cvtag{PyTorch}
+\cvtag{Pandas}
+\cvtag{NumPy}
+\cvtag{Scikit-Learn}
+\cvtag{OpenCV}
+
+\divider\smallskip
+
+\cvtag{ROS2}
+\cvtag{Edge AI (Jetson)}
+\cvtag{Linux}
+
+\divider\smallskip
+
+\cvtag{Git / GitHub}
+\cvtag{Docker}
+\cvtag{CI/CD Basics}
+
+\bigskip
+
+\cvsection{Languages}
+
+\textbf{French} \hfill Native \\
+\smallskip
+\textbf{English} \hfill Professional Working (B2)
+
+\bigskip
+
+\cvsection{Education}
+
+% Epitech
+\cvevent{M.Sc. in Computer Science}{Epitech Technology}{2023 -- 2028}{Montpellier, France}
+\begin{itemize}
+    \item \textbf{GPA: 3.9/4.0}
+    \item \textbf{Ranked 1st} for 3 consecutive years at Montpellier Campus.
+\end{itemize}
+
+\divider
+
+% High School (Bac)
+\cvevent{Scientific Baccalaureate}{Lycée René Gosse}{2023}{Clermont-l'Hérault}
+\begin{itemize}
+    \item \textbf{Mention Très Bien} (Highest Honors).
+    \item Specialization: Mathematics \& Computer Science (NSI).
+    \item Option: \textbf{Expert Mathematics}.
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
