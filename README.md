@@ -15,7 +15,7 @@ If you want to compile it on your machine:
 1. Install a LaTeX distribution (TeX Live or MiKTeX).
 2. Clone the repo:
    ```bash
-   git clone [https://github.com/Matyslgr/Resume.git](https://github.com/Matyslgr/Resume.git)
+   git clone https://github.com/Matyslgr/Resume.git
    ```
 3. Compile using `latexmk` or `xelatex`:
    ```bash
